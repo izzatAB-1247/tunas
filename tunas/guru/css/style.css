@@ -1,0 +1,167 @@
+body {
+    background-image: url('bg_dashboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    padding: 20px;
+    border-right: 3px solid #d2e3ff;
+    border-radius: 0 25px 25px 0;
+    overflow-y: auto; /* Tambahkan scroll jika konten melebihi tinggi */
+    overflow-x: hidden;
+}
+
+/* Custom scrollbar untuk sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #5A6BFF;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #4a5bef;
+}
+
+.logo-cute {
+    font-size: 22px;
+    font-weight: 800;
+    color: #5A6BFF;
+    margin-bottom: 15px;
+}
+
+.profile-box {
+    margin-top: 1px;
+    padding: 12px;
+    background: #eef3ff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-box img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-box h5 {
+    font-weight: 800;
+    margin-top: 8px;
+    font-size: 14px;
+}
+.profile-card{
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+.profile-img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #eaeaea;
+}
+
+
+/* Sidebar Menu */
+.menu {
+    margin-top: 20px;
+    padding-bottom: 20px; /* Tambahkan padding bawah agar item terakhir tidak terpotong */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+    background: #f4f7ff;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-item i {
+    font-size: 16px;
+    color: #5A6BFF;
+}
+
+.menu-item:hover {
+    background: #dce6ff;
+    transform: translateX(6px);
+    text-decoration: none;
+}
+
+/* Content */
+.main-content {
+    margin-left: 290px;
+    padding: 35px;
+}
+
+/* Welcome */
+.welcome-box {
+    background: linear-gradient(135deg, #8bb0ff, #a295ff);
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.welcome-box h2 {
+    font-weight: 800;
+}
+
+/* Cards */
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.25s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.emoji {
+    font-size: 35px;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #0b2545 !important;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.navbar-brand i {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
